@@ -1,0 +1,12 @@
+masse = int(input("Entrez votre poids en kg:"))
+taille = float(input("Entrez votre taille en m"))
+def imc(masse,taille):
+    return masse/(taille**2)
+imc =imc(masse,taille)
+if imc>25.0:
+    print("Vous êtes en surpoids.")
+elif imc<18.5:
+    print("Voues êtes trop maigre.")
+else:
+    print("Vous avez une corpulence normale.")
+input()
